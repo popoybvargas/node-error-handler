@@ -1,0 +1,28 @@
+{
+  "name": "zv-node-error-handler",
+  "version": "1.0.0",
+  "description": "Error handling for a NodeJs-Express app",
+  "main": "dist/index.js",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "dev": "tsnd --respawn src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "ts",
+    "typescript",
+    "error-handling"
+  ],
+  "author": "Popoy Vargas",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.15",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.2"
+  }
+}
