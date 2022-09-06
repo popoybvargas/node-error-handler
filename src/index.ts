@@ -5,7 +5,7 @@ import { ErrorException } from './errorException';
 import { ErrorModel } from './errorModel';
 import { ErrorStatus } from './errorStatus';
 
-export const errorHandler = (err: Error, _: Request, res: Response, __: NextFunction) =>
+export default (err: Error, _: Request, res: Response, __: NextFunction) =>
 {
   console.error(`ERROR ${JSON.stringify(err)}`);
   

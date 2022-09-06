@@ -1,10 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.errorHandler = void 0;
 const errorCode_1 = require("./errorCode");
 const errorException_1 = require("./errorException");
 const errorStatus_1 = require("./errorStatus");
-const errorHandler = (err, _, res, __) => {
+exports.default = (err, _, res, __) => {
     console.error(`ERROR ${JSON.stringify(err)}`);
     let errorCode = errorCode_1.ErrorCode.UnknownError;
     let errorStatus = err instanceof errorException_1.ErrorException ? err.status : errorStatus_1.ErrorStatus.UnknownError;
@@ -15,4 +14,3 @@ const errorHandler = (err, _, res, __) => {
     else
         res.json({ code: errorCode, status: errorStatus, errorMessage });
 };
-exports.errorHandler = errorHandler;

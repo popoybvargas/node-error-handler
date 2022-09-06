@@ -1,6 +1,6 @@
 {
   "name": "zv-node-error-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Error handling for a NodeJs-Express app",
   "main": "dist/index.js",
   "repository": {
